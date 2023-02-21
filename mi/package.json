@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "vite-plugin-css-injected-by-js": "^3.0.1",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@originjs/vite-plugin-federation": "^1.2.1",

@@ -11,7 +11,8 @@
   "dependencies": {
     "@originjs/vite-plugin-federation": "^1.2.1",
     "vite-plugin-css-injected-by-js": "^3.0.1",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

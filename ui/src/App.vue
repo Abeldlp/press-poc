@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import Navbar from "./components/Navbar.vue";
 import Link from "./components/Link.vue";
-import Card from "./components/Card.vue";
 import Button from "./components/Button.vue";
 </script>
 
@@ -14,9 +13,7 @@ import Button from "./components/Button.vue";
     </Navbar>
   </div>
   <Button />
-  <Card>
-    <p>Hello world</p>
-  </Card>
+  <Link to="/" text="hello" color="black" />
 </template>
 
 <style scoped>
