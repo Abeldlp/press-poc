@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import CrmApp from "crm/App";
-import MiApp from "mi/App";
+import Button from "./components/Button.vue";
+
+const handleClick = () => {
+  console.log("Button clicked");
+};
 </script>
 
 <template>
   <div>
-    <h1>Main application</h1>
-    <CrmApp />
-    <MiApp />
+    <Button text="Hello world" :handleClick="handleClick" />
   </div>
 </template>
 

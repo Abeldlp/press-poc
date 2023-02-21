@@ -8,7 +8,10 @@ export default defineConfig({
     federation({
       name: "mi",
       remotes: {
-        crm: "http://localhost:3002/assets/remoteEntry.js",
+        ui: "http://localhost:3003/assets/remoteEntry.js",
+      },
+      exposes: {
+        "./App": "./src/App.vue",
       },
       shared: ["vue"],
     }),

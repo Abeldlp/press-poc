@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vue-tsc && vite build && vite preview"
+    "serve": "vue-tsc && vite build && vite preview",
+    "stop": "kill-port --port 3001"
   },
   "dependencies": {
     "vue": "^3.2.45"

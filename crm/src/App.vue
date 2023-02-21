@@ -1,10 +1,21 @@
 <script setup lang="ts">
-import Button from "./Button.vue";
+import { defineAsyncComponent, ref } from "vue";
+
+const open = ref<boolean>(false);
+const Button = defineAsyncComponent(() => import("ui/Button"));
+
+const handleClick = () => {
+  open.value = !open.value;
+};
 </script>
 
 <template>
   <div>
-    <Button />
+    <h1>CRM app</h1>
+  </div>
+  <Button text="Toggle text" :handleClick="handleClick" />
+  <div v-if="open">
+    <p>Open CRM component using the button from the ui app</p>
   </div>
 </template>
 

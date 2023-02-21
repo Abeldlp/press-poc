@@ -6,22 +6,19 @@ export default defineConfig({
   plugins: [
     vue(),
     federation({
-      name: "crm",
+      name: "ui",
       filename: "remoteEntry.js",
-      remotes: {
-        ui: "http://localhost:3003/assets/remoteEntry.js",
-      },
       exposes: {
-        "./App": "./src/App.vue",
+        "./Button": "./src/components/Button.vue",
       },
       shared: ["vue"],
     }),
   ],
   server: {
-    port: 3002,
+    port: 3003,
   },
   preview: {
-    port: 3002,
+    port: 3003,
   },
   build: {
     minify: false,

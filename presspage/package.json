@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "serve": "vue-tsc && vite build && vite preview",
+    "stop": "kill-port --port 3000"
   },
   "dependencies": {
     "@originjs/vite-plugin-federation": "^1.2.1",

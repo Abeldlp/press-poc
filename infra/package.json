@@ -1,0 +1,20 @@
+{
+  "name": "infra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npm run serve-ui& npm run serve-crm& npm run serve-mi& npm run serve-presspage&",
+    "serve-crm": "cd ../crm && npm run serve",
+    "serve-mi": "cd ../mi && npm run serve",
+    "serve-ui": "cd ../ui && npm run serve",
+    "serve-presspage": "cd ../presspage && npm run serve",
+    "stop": "kill-port --port 3000,3001,3002,3003"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kill-port": "^2.0.1"
+  }
+}
