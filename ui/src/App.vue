@@ -2,6 +2,7 @@
 import Navbar from "./components/Navbar.vue";
 import Link from "./components/Link.vue";
 import Card from "./components/Card.vue";
+import Button from "./components/Button.vue";
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import Card from "./components/Card.vue";
       <Link to="/contact" text="Contact" />
     </Navbar>
   </div>
+  <Button />
   <Card>
     <p>Hello world</p>
   </Card>
