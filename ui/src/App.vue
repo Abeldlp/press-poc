@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Navbar from "./components/Navbar.vue";
 import Link from "./components/Link.vue";
+import Card from "./components/Card.vue";
 </script>
 
 <template>
@@ -11,6 +12,9 @@ import Link from "./components/Link.vue";
       <Link to="/contact" text="Contact" />
     </Navbar>
   </div>
+  <Card>
+    <p>Hello world</p>
+  </Card>
 </template>
 
 <style scoped>
@@ -18,7 +22,6 @@ import Link from "./components/Link.vue";
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 100vh;
   width: 100%;
 }
 </style>

@@ -3,3 +3,9 @@ declare module "ui/Button" {
   const Button: ReturnType<typeof defineComponent>;
   export default Button;
 }
+
+declare module "ui/Card" {
+  import { defineComponent } from "vue";
+  const Card: ReturnType<typeof defineComponent>;
+  export default Card;
+}

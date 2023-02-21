@@ -4,6 +4,7 @@ import { defineAsyncComponent, ref } from "vue";
 const open = ref<boolean>(false);
 
 const Button = defineAsyncComponent(() => import("ui/Button"));
+const Card = defineAsyncComponent(() => import("ui/Card"));
 
 const handleClick = () => {
   open.value = !open.value;
@@ -18,6 +19,8 @@ const handleClick = () => {
     <Button text="MI toggle" :handleClick="handleClick" />
   </div>
   <div v-if="open">
-    <p>Open MI component using the button from the ui app</p>
+    <Card>
+      <p>Open MI component using the button from the ui app</p>
+    </Card>
   </div>
 </template>
