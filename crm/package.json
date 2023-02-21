@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "serve": "vue-tsc && vite build && vite preview",
-    "stop": "kill-port --port 3002"
+    "serve": "vue-tsc && vite build && vite preview"
   },
   "dependencies": {
     "vite-plugin-css-injected-by-js": "^3.0.1",
