@@ -1,28 +1,24 @@
 <script setup lang="ts">
-import Button from "./components/Button.vue";
-
-const handleClick = () => {
-  console.log("Button clicked");
-};
+import Navbar from "./components/Navbar.vue";
+import Link from "./components/Link.vue";
 </script>
 
 <template>
-  <div>
-    <Button text="Hello world" :handleClick="handleClick" />
+  <div class="container">
+    <Navbar>
+      <Link to="/home" text="Home" />
+      <Link to="/about" text="About" />
+      <Link to="/contact" text="Contact" />
+    </Navbar>
   </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
 }
 </style>
