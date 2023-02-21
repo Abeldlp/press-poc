@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import CrmApp from "crm/App";
-import MiApp from "mi/App";
+// import CrmApp from "crm/App";
+// import MiApp from "mi/App";
 import { defineAsyncComponent } from "vue";
 
+const CrmApp = defineAsyncComponent(() => import("crm/App"));
+const MiApp = defineAsyncComponent(() => import("mi/App"));
 const Navbar = defineAsyncComponent(() => import("ui/Navbar"));
 const Link = defineAsyncComponent(() => import("ui/Link"));
 </script>
@@ -15,9 +17,12 @@ const Link = defineAsyncComponent(() => import("ui/Link"));
         <Link to="/crm" text="CRM" />
       </Navbar>
     </div>
-    <h1>Main application</h1>
-    <CrmApp />
-    <MiApp />
+    <div class="media-inquiries-container">
+      <MiApp />
+    </div>
+    <div class="crm-container">
+      <CrmApp />
+    </div>
   </div>
 </template>
 

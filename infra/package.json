@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "npm run serve-ui& npm run serve-crm& npm run serve-mi& npm run dev-presspage&",
+    "dev-presspage": "cd ../presspage && npm run dev",
     "serve": "npm run serve-ui& npm run serve-crm& npm run serve-mi& npm run serve-presspage&",
     "serve-crm": "cd ../crm && npm run serve",
     "serve-mi": "cd ../mi && npm run serve",

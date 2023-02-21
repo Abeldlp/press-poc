@@ -11,6 +11,7 @@ export default defineConfig({
     vue(),
     federation({
       name: "mi",
+      filename: "remoteEntry.js",
       remotes: {
         ui: "http://localhost:3003/assets/remoteEntry.js",
       },

@@ -10,26 +10,15 @@ const handleClick = () => {
 </script>
 
 <template>
-  <div>
-    <h1>CRM app</h1>
-  </div>
-  <Button text="Toggle text" :handleClick="handleClick" />
-  <div v-if="open">
-    <p>Open CRM component using the button from the ui app</p>
+  <div class="main-crm-container">
+    <div>
+      <h1>CRM app</h1>
+    </div>
+    <Button text="Toggle text" :handleClick="handleClick" />
+    <div v-if="open">
+      <p>Open CRM component using the button from the ui app</p>
+    </div>
   </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>

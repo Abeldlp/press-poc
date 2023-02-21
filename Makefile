@@ -1,4 +1,6 @@
-serve:
+dev:
+	cd infra && npm run dev
+start:
 	cd infra && npm run serve
 stop:
 	cd infra && npm run stop
