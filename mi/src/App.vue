@@ -5,6 +5,7 @@ const open = ref<boolean>(false);
 
 const Button = defineAsyncComponent(() => import("ui/Button"));
 const Card = defineAsyncComponent(() => import("ui/Card"));
+const Link = defineAsyncComponent(() => import("ui/Link"));
 
 const handleClick = () => {
   open.value = !open.value;
@@ -23,4 +24,9 @@ const handleClick = () => {
       <p>Open MI component using the button from the ui app</p>
     </Card>
   </div>
+  <div>
+    <Link to="/mi/clients" text="Clients" color="black" />
+    <Link to="/mi/invoices" text="Invoices" color="black" />
+  </div>
+  <router-view></router-view>
 </template>

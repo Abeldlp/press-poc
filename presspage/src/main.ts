@@ -6,8 +6,24 @@ import { createRouter, createWebHashHistory } from "vue-router";
 const CrmApp = defineAsyncComponent(() => import("crm/App"));
 const MiApp = defineAsyncComponent(() => import("mi/App"));
 
+const Clients = defineAsyncComponent(() => import("mi/Clients"));
+const Invoices = defineAsyncComponent(() => import("mi/Invoices"));
+
 const routes = [
-  { path: "/", component: MiApp },
+  {
+    path: "/mi",
+    component: MiApp,
+    children: [
+      {
+        path: "clients",
+        component: Clients,
+      },
+      {
+        path: "invoices",
+        component: Invoices,
+      },
+    ],
+  },
   { path: "/crm", component: CrmApp },
 ];
 

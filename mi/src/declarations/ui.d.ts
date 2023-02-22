@@ -9,3 +9,9 @@ declare module "ui/Card" {
   const Card: ReturnType<typeof defineComponent>;
   export default Card;
 }
+
+declare module "ui/Link" {
+  import { defineComponent } from "vue";
+  const Link: ReturnType<typeof defineComponent>;
+  export default Link;
+}

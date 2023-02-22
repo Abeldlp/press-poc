@@ -13,6 +13,9 @@ export default defineConfig({
       },
       exposes: {
         "./App": "./src/App.vue",
+        "./Clients": "./src/pages/Clients.vue",
+        "./Invoices": "./src/pages/Invoices.vue",
+        "./routes": "./src/routes/main",
       },
       shared: ["vue"],
     }),

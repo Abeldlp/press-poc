@@ -9,7 +9,7 @@ const Link = defineAsyncComponent(() => import("ui/Link"));
   <div>
     <div class="navigation-bar-container">
       <Navbar>
-        <Link to="/" text="Inquiries" color="white" />
+        <Link to="/mi/clients" text="Inquiries" color="white" />
         <Link to="/crm" text="CRM" color="white" />
       </Navbar>
     </div>
